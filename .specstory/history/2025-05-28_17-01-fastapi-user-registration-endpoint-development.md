@@ -1053,6 +1053,22 @@ Read file: next.config.ts
 
 ---
 
+Removing the TypeScript config file since Next.js 14 doesn't support it
+
+---
+
+
+
+---
+
+_**User**_
+
+Continue
+
+---
+
+_**Assistant**_
+
 
 
 ---
