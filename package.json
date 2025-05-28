@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "postinstall": "npm rebuild lightningcss",
-    "build": "rm -rf node_modules/lightningcss/node && npm rebuild lightningcss --update-binary && next build",
+    "dev": "node scripts/fix-lightningcss.js && next dev",
+    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then echo 'VERCEL environment detected, skipping lightningcss rebuild'; else npm rebuild lightningcss; fi; node scripts/fix-lightningcss.js || true",
+    "build": "node scripts/fix-lightningcss.js && ls -l node_modules/lightningcss/node/index.js && next build",
     "start": "next start",
     "lint": "next lint"
   },
