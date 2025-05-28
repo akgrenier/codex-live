@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/fix-lightningcss.js && next dev",
-    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then echo 'VERCEL environment detected, skipping lightningcss rebuild'; else npm rebuild lightningcss; fi; node scripts/fix-lightningcss.js || true",
-    "build": "node scripts/fix-lightningcss.js && ls -l node_modules/lightningcss/node/index.js && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,18 +18,18 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^10.1.0",
-    "tailwind-merge": "^3.3.0",
-    "lightningcss": "^1.10.2"
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
-    "tailwindcss": "^4",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
     "tw-animate-css": "^1.3.0",
     "typescript": "^5"
   }

@@ -30,7 +30,7 @@ export const codexSources: CodexSource[] = [
   },
   {
     id: 'hacker_news_discussion',
-    url: 'https://news.ycombinator.com/item?id=42449063',
+    url: 'https://news.ycombinator.com/item?id=44042070',
     title: 'Hacker News Discussion: OpenAI Codex Review',
     source_type: 'discussion',
     key_insights: [
@@ -46,7 +46,7 @@ export const codexSources: CodexSource[] = [
   },
   {
     id: 'every_to_review',
-    url: 'https://every.to/chain-of-thought/openai-codex-vibe-check',
+    url: 'https://every.to/chain-of-thought/vibe-check-codex-openai-s-new-coding-agent',
     title: 'OpenAI Codex: A Vibe Check',
     source_type: 'review',
     author: 'Dan Shipper',
@@ -79,7 +79,7 @@ export const codexSources: CodexSource[] = [
   },
   {
     id: 'datacamp_tutorial',
-    url: 'https://www.datacamp.com/tutorial/openai-codex-chatgpt',
+    url: 'https://www.datacamp.com/tutorial/openai-codex',
     title: 'DataCamp: How to Use OpenAI Codex',
     source_type: 'tutorial',
     key_insights: [
