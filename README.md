@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Codex Live
+
+AI prompt library with role-based cards and intelligent categorization. A curated collection of power prompts organized by professional roles and use cases.
+
+## Features
+
+- 🎯 **Role-based prompts** - Organized by Solo Founder, Engineering Manager, Scrum Master, TPM, QA Engineer, Solutions Architect
+- 🎲 **Smart randomization** - Ensures variety while preventing adjacent cards from the same role
+- 🎨 **Modern UI** - Clean, responsive design with hover effects and tooltips
+- 📱 **Mobile-first** - Responsive grid layout that works on all devices
+- 🔗 **Deep links** - Direct links to ChatGPT with pre-filled prompts
+
+## Tech Stack
+
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **CSS Modules** - Scoped styling
+- **Tailwind CSS** - Utility-first CSS framework
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── components/          # React components
+│   ├── PromptCard.tsx   # Individual prompt card
+│   ├── PromptCards.tsx  # Card grid container
+│   └── ThirdPartyCard.tsx # External resource cards
+├── data/               # Data definitions
+│   ├── powerPrompts.ts # Prompt definitions
+│   ├── codexSources.ts # Third-party resources
+│   └── codexIntelligence.ts # AI insights
+└── api/               # API routes
+    └── chat/          # Chat endpoints
+```
 
-## Learn More
+## Adding New Prompts
 
-To learn more about Next.js, take a look at the following resources:
+1. Edit `app/data/powerPrompts.ts`
+2. Add your prompt to the appropriate category
+3. Include role, title, description, and ChatGPT link
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```typescript
+{
+  role: 'solo-founder',
+  title: 'Your Prompt Title',
+  description: 'Brief description of what this prompt does',
+  href: 'https://chatgpt.com/g/g-...'
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+1. Fork the repo
+2. Create a feature branch
+3. Add your prompts or improvements
+4. Submit a pull request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - feel free to use this for your own prompt collections!
