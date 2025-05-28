@@ -62,21 +62,6 @@ export const codexSources: CodexSource[] = [
       "Dan Shipper's 'vibe check' review provides an analytical assessment of OpenAI Codex's market positioning and real-world adoption patterns. Shipper positions Codex as an 'autonomous software engineer' specifically designed for senior developers rather than a general-purpose coding assistant. His 'Reach Test' reveals mixed adoption patterns, with tech leads finding value in Codex for specific scenarios while others remain skeptical about its broad applicability.",
   },
   {
-    id: 'openai_operator',
-    url: 'https://openai.com/operator/',
-    title: 'OpenAI Operator',
-    source_type: 'official',
-    key_insights: [
-      'Research preview status',
-      'Browser-based agent capabilities',
-      'ChatGPT Pro requirement',
-    ],
-    sentiment: 'promotional',
-    credibility: 'highest - official source',
-    summary:
-      'The official OpenAI Operator page provides a concise overview of the browser-based agent capabilities that complement Codex functionality. Operator is presented as a research preview that enables AI agents to interact with web browsers, expanding beyond code-specific tasks to general web automation. The page emphasizes that Operator requires a ChatGPT Pro subscription, positioning it as a premium feature for advanced users.',
-  },
-  {
     id: 'github_discussions',
     url: 'https://github.com/openai/codex/discussions',
     title: 'GitHub Codex Discussions',
